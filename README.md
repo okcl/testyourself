@@ -59,25 +59,21 @@ cd ../server
 npm install
 ```
 
-### 4. Set Up the Database
+### 4. Start the Backend Server
 
-In the `server` directory, the SQLite database (`quiz.db`) is already included. If you need to reset or update the database, you can follow these steps:
-
-1. Open `server/database.js` and check the database initialization logic.
-2. Manually add or edit quiz questions in the `quiz.db` file if necessary.
-
-### 5. Start the Server
-
-Start the backend server from the `server` directory:
+Once you’ve set up the backend, you can start the Node.js server. It will automatically generate the `quiz.db` file if it doesn't exist.
 
 ```bash
 cd server
+npm install
 npm start
 ```
 
+This will run the server on `http://localhost:5000`. You can now interact with the API endpoints to create and fetch tests.
+
 The server will run on `http://localhost:5000` by default.
 
-### 6. Start the Frontend
+### 5. Start the Frontend
 
 Now, start the frontend from the `client` directory:
 
@@ -88,7 +84,7 @@ npm start
 
 The frontend will be available at `http://localhost:3000`.
 
-### 7. Open the App in Your Browser
+### 6. Open the App in Your Browser
 
 Once both the server and client are running, open your browser and go to:
 
