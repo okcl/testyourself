@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+Here's an updated `README.md` tailored to the structure of your project:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
+
+# Quiz App
+
+A full-stack quiz app with a React frontend and Node.js backend. The app allows users to take quizzes, view questions and answers, and manage them through the backend.
+
+## Features
+
+- **Frontend (React):**
+  - Display and take quizzes
+  - User-friendly interface with question navigation
+
+- **Backend (Node.js & SQLite):**
+  - Fetch quiz questions from the database
+  - Manage quiz data (add, retrieve, etc.)
+
+## Requirements
+
+Before running the app, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (Recommended version: 16.x or higher)
+- [npm](https://www.npmjs.com/) (npm comes with Node.js)
+
+## Getting Started
+
+### 1. Clone the Repository
+
+Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/okcl/testyourself.git
+```
+
+### 2. Navigate into the Project Directory
+
+```bash
+cd testyourself
+```
+
+### 3. Install Dependencies
+
+#### For the client (React frontend):
+
+Navigate to the `client` directory and install dependencies:
+
+```bash
+cd client
+npm install
+```
+
+#### For the server (Node.js backend):
+
+Navigate to the `server` directory and install dependencies:
+
+```bash
+cd ../server
+npm install
+```
+
+### 4. Set Up the Database
+
+In the `server` directory, the SQLite database (`quiz.db`) is already included. If you need to reset or update the database, you can follow these steps:
+
+1. Open `server/database.js` and check the database initialization logic.
+2. Manually add or edit quiz questions in the `quiz.db` file if necessary.
+
+### 5. Start the Server
+
+Start the backend server from the `server` directory:
+
+```bash
+cd server
+npm start
+```
+
+The server will run on `http://localhost:5000` by default.
+
+### 6. Start the Frontend
+
+Now, start the frontend from the `client` directory:
+
+```bash
+cd ../client
+npm start
+```
+
+The frontend will be available at `http://localhost:3000`.
+
+### 7. Open the App in Your Browser
+
+Once both the server and client are running, open your browser and go to:
+
+- Frontend: [http://localhost:3000](http://localhost:3000)
+- Backend API: [http://localhost:5000](http://localhost:5000)
+
+## Project Structure
+
+```
+quiz-app/
+  ├── client/               # React frontend
+  │   ├── public/           # Public assets like index.html
+  │   └── src/              # React source files
+  │       ├── components/   # React components (e.g., Quiz, Question, etc.)
+  │       ├── App.js        # Main React app file
+  │       └── index.js      # React entry point
+  ├── server/               # Node.js backend
+  │   ├── database.js       # SQLite database initialization
+  │   ├── server.js         # Express server setup
+  │   └── quiz.db           # SQLite database with quiz data
+  ├── package.json          # Project dependencies
+  └── README.md             # This file
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+### For the Client (React):
 
-### `npm start`
+- `npm start`: Runs the app in development mode (Frontend).
+- `npm run build`: Builds the app for production.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### For the Server (Node.js):
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `npm start`: Runs the server in development mode (Backend).
+  
+## Troubleshooting
 
-### `npm test`
+- If the frontend is not displaying correctly, ensure the server is running.
+- If you encounter any issues with the database, check the `quiz.db` file and verify the SQLite setup.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
