@@ -92,7 +92,7 @@ Once both the server and client are running, open your browser and go to:
 ## Project Structure
 
 ```
-quiz-app/
+testyourself/
   ├── client/               # React frontend
   │   ├── public/           # Public assets like index.html
   │   └── src/              # React source files
