@@ -61,11 +61,9 @@ npm install
 
 ### 4. Start the Backend Server
 
-Once you’ve set up the backend, you can start the Node.js server. It will automatically generate the `quiz.db` file if it doesn't exist.
+Once you’ve set up the backend, you can start the Node.js server. It will automatically generate the `quiz.db` file.
 
 ```bash
-cd server
-npm install
 npm start
 ```
 
